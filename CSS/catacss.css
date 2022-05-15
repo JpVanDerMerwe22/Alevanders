@@ -1,0 +1,358 @@
+/*catalogue css*/
+
+body {
+    background-image: url(aboutbackgrnd/night.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+header {
+    display: grid;
+    grid-column: 1/ 6;
+    grid-row: 1 / 1;
+    z-index: 1;
+    margin-left: 5%;
+    align-content: center;
+    width: 100%;
+}
+
+#gridContainer {
+    position: absolute;
+    width: 100%;
+    grid-column: 1 / 6;
+    grid-row: 2 / 5;
+    top: 100px;
+    z-index: -1;
+}
+
+#cartimg,
+#cart {
+    grid-column: 6 /6;
+    grid-row: 1 / 1;
+    width: 50px;
+    height: 45px;
+    opacity: 0.4;
+    align-content: space-around;
+    margin-top: 5px;
+}
+
+.nav {
+    grid-area: 1/ 4 / 4 / 4;
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+}
+
+nav>ul {
+    display: none;
+    list-style-type: none;
+    padding: 2px 8px 2px 8px;
+    opacity: 0.9 !important;
+    text-decoration-style: none;
+    margin: 2px 2px 2px 2px;
+}
+
+.nav1>a {
+    background-color: rgba(106, 140, 153, 0.90);
+    border: 0.5px solid rgb(97, 91, 91);
+    border-radius: 4%;
+    box-shadow: 2px 2px 3px 3px rgb(151, 146, 146);
+}
+
+.nav1 {
+    font-style: italic;
+    border: 1px hidden;
+    text-decoration: none;
+    color: rgb(112, 101, 40);
+    padding: 2px 8px 2px 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav1:hover {
+    color: rgb(46, 42, 42);
+    opacity: 1;
+}
+
+h6 {
+    text-align: center;
+    color: rgb(170, 243, 243);
+    opacity: 0.6;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+table {
+    background-color: lightgrey;
+    opacity: 0.7;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border: 0.5px solid rgb(100, 95, 95);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr,
+th,
+td {
+    border: 0.4px solid grey;
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+}
+
+td>a {
+    text-decoration: inherit;
+    animation: main 8s infinite;
+}
+
+@-webkit-keyframes main {
+    0% {
+        color: rgb(184, 165, 59);
+    }
+
+    20% {
+        color: rgb(219, 195, 60);
+    }
+
+    40% {
+        color: rgb(219, 198, 76);
+    }
+
+    60% {
+        color: rgb(218, 199, 92);
+    }
+
+    80% {
+        color: rgb(223, 206, 109);
+    }
+
+    100% {
+        color: rgb(185, 173, 105);
+    }
+}
+
+@keyframes main {
+    0% {
+        color: rgb(184, 165, 59);
+    }
+
+    20% {
+        color: rgb(219, 195, 60);
+    }
+
+    40% {
+        color: rgb(219, 198, 76);
+    }
+
+    60% {
+        color: rgb(218, 199, 92);
+    }
+
+    80% {
+        color: rgb(223, 206, 109);
+    }
+
+    100% {
+        color: rgb(185, 173, 105);
+    }
+}
+
+
+
+
+#item1,
+#item2,
+#item3,
+#item4,
+#item5,
+#item6 {
+    -webkit-transition: .2s all;
+    -moz-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+    cursor: pointer;
+}
+
+#item1:hover,
+#item2:hover,
+#item3:hover,
+#item4:hover,
+#item5:hover,
+#item6:hover {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+}
+
+footer {
+    grid-column: 1 / 6;
+    grid-row: 6 / 6;
+    text-align: center;
+}
+
+footer>a {
+    padding: 2px 2px 2px 2px;
+}
+
+hr {
+    border: 1px solid rgb(39, 65, 65);
+}
+
+img {
+    padding: 1px 1px 1px 1px;
+    border: 0.5px hidden rgb(43, 41, 41);
+    opacity: 0.6;
+}
+
+img:hover {
+    filter: drop-shadow(-2px -2px 1px);
+    opacity: 0.8;
+}
+
+
+/*Add to cart section*/
+#displayOption {
+    /*display set to none for javascript*/
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    left: 300px;
+    max-width: 45%;
+    border: 1px solid rgb(98, 98, 218);
+    border-radius: 2px;
+    background-color: rgba(39, 36, 36, 0.90);
+    box-shadow: 1px 1px 2px 2.5px rgb(40, 65, 65);
+}
+
+#click1Extra,
+#click2Extra,
+#click3Extra,
+#click4Extra,
+#click5Extra,
+#click6Extra {
+    /*display set to none for javascript*/
+    display: none;
+    grid-area: 1 / 2 / 5 / 6;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: lighter;
+    color: black;
+    background-color: rgb(202, 186, 166, 0.65);
+    margin: 0px 0.5px 0px 0.5px;
+
+}
+
+.closeExtra {
+    /*button*/
+    grid-column: 5 / 6;
+    grid-row: 4 / 4;
+    opacity: 0.2;
+    width: 25%;
+    margin-left: 72.5%;
+    margin-top: 2.5px;
+    padding: 0.5px 0.5px 0.5px 0.5px;
+}
+
+.form-check {
+    display: block;
+    font-size: 12px;
+    grid-area: 1 / 1 / 4 / 1;
+    margin: 1px 2px 1px 1px;
+    color: rgb(85, 118, 119);
+}
+
+/*important to overwrite bootstrap*/
+
+
+.form-floating {
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    width: 40%;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+}
+
+#extraValue {
+    grid-area: 5 / 1 / 6 / 1;
+    width: 35%;
+    height: fit-content;
+}
+
+#totalValue {
+    grid-area: 5 / 5 / 5 / 6;
+    width: 100%;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+#addCart {
+    /*button*/
+    grid-area: 5 / 2 / 5 / 5;
+    max-width: 38%;
+    height: auto;
+    border: 1.5px solid lightblue;
+    box-shadow: 1.5px 1.5px 2px rgb(141, 141, 247);
+    background-color: rgb(43, 156, 156, 0.75);
+    border-radius: 6px;
+    font-size: 10px;
+}
+
+#booking>input {
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+    border: 1 px solid lightslategray;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1.5px 1.5px rgb(69, 71, 73);
+}
+select, option, textarea{
+    margin-top: .5px;
+    margin-bottom: .5px;
+    border: 1px solid lightskyblue;
+    box-shadow: 1px 1px 1.5px 1.5px rgb(69, 71, 73);
+}
+
+/* Cart section ends HERE*/
+#booking {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 120px;
+    bottom: 120px;
+    margin-left: 5%;
+}
+
+#submit,
+#close {
+    border: 1.5px solid rgb(94, 107, 121, 0.75);
+    background-color: rgb(107, 102, 102, 0.75);
+    border-radius: 6px;
+    padding: 1.5px;
+    margin-top: 0.5px;
+    margin-left: 20%;
+}
+
+#close {
+    margin-left: 0.1px !important;
+    margin-right: 1px !important;
+}
+
+#callUs {
+    text-align: center;
+    width: fit-content;
+    margin-left: 5%;
+    margin-bottom: 2px;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>catalogue</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--external css-->
+    <link href="css/catacss.css" rel="stylesheet" type="text/css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--Top Navbar-->
+    <header>
+        <a href="./Cart.html" id="cart"><img src="Images/cart.png" id="cartimg" alt="cart"></a>
+        <nav class="nav">
+            <a href="Alevandershome.html"><img id="Logo" src="Images/AlevandersLogo.png" height="135" width="220"
+                    alt="Logo"></a>
+            <ul id="navlinks">
+                <li class="nav1"><a class="nav1" href="Gallery.html">Gallery</a></li>
+                <li class="nav1"><a class="nav1" href="Catalogue.html">Bookings</a></li>
+                <li class="nav1"><a class="nav1" href="About.html">About Alevanders</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!--tabled list of bookings and prices-->
+    <div id="gridContainer">
+        <h6>Click on a package to see more information</h6>
+        <table>
+            <tr>
+                <th>Booking</th>
+                <th>What you get</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td id="item1"><a href="#click1Extra" id="click1">The Combo Plus</a>
+                </td>
+                <td>
+                    8 Hours session
+                    <em>Video Package</em>
+                    <em>Photography Package</em>
+                </td>
+                <td id="price1">R 10 500</td>
+            </tr>
+
+            <tr>
+                <td id="item2"><a id="click2">Maternity Session</a></td>
+                <td>3 Hours, All images edited</td>
+                <td id="price2">R 1 500</td>
+            </tr>
+
+            <tr>
+                <td id="item3"><a id="click3" href="#click3">Newborn Session</a></td>
+                <td>3 hours, All images edited</td>
+                <td id="price3">R 1 800</td>
+            </tr>
+
+            <tr>
+                <td id="item4"><a id="click4">Model Shoot</a></td>
+                <td>1 hour charged per person, All images edited</td>
+                <td id="price4">R 850</td>
+            </tr>
+
+            <tr>
+                <td id="item5"><a id="click5">Family and Newborn Combo</a></td>
+                <td>4 hours, all images edited</td>
+                <td id="price5">R 3 000</td>
+            </tr>
+
+            <tr>
+                <td id="item6"><a id="click6">Full Family/Couple Session</a></td>
+                <td>1 hour, All images edited</td>
+                <td id="price6">R 950</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <div id="displayOption">
+            <!--Extra info to be displayed on top of table with javascript-->
+            <button type="button" id="closeExtra" class="closeExtra">X</button>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkAll">
+                <label class="form-check-label" for="checkAll">
+                    Take All
+                </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="150" id="check1">
+                    <label class="form-check-label" for="check1">
+                        USB, R150
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="300" id="check2">
+                    <label class="form-check-label" for="check2">
+                        Printed Mug, R300
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="450" id="check3">
+                    <label class="form-check-label" for="check3">
+                        Album with session Highlights, R450
+                    </label>
+                </div>
+            </div>
+            <input id="dateBooked" class="prices" type="date">
+            <input id="extraValue" class="prices" type="number" disabled value="0" placeholder="0">
+            <input id="totalValue" class="prices" type="number" disabled value="0" placeholder="0">
+            <button id="addCart" type="button">Add To Cart</button>
+        </div>
+
+        <!--Extra info of packages displayed on click-->
+        <p id="click1Extra" class="extraInfo" name="Combo Plus">
+            A full wedding coverage, includes a usb and an album book.
+            Ceremony 10-20 min, Speeches 5 min,
+            Couples love story,
+            Highlights 1-2 min
+            Cutting the cake, First Dance, Location decor.
+            Photos from getting ready to The first dance
+            - +- 400 photos (all edited)
+        </p>
+
+        <p id="click2Extra" class="extraInfo" name="Maternity Session">A full maternity session, We have extras
+            available. Schedule a call for
+            more
+            information(full
+            description coming soon)</p>
+
+        <p id="click3Extra" class="extraInfo" name="Newborn Session">A full baby shoot, Schedule a call for more
+            information, You can add a usb
+            too(full description
+            coming soon)</p>
+
+        <p id="click4Extra" class="extraInfo" name="Model Shoot">A model shoot, we have beautiful outfits availabe to
+            rent(full description
+            coming soon)</p>
+
+        <p id="click5Extra" class="extraInfo" name="Family and Newborn Combo">A baby shoot with mom and dad, grandma and
+            grandpa too.
+            (full
+            description
+            coming soon)</p>
+
+        <p id="click6Extra" class="extraInfo" name="Full Family/Couple Session">For the whole family. You can add a usb
+            or an album(full description
+            coming
+            soon)</p>
+
+
+        <!--form to make an appointment-->
+
+        <form action="#" id="booking">
+            <input type="text" placeholder="Your name">
+            <input type="text" placeholder="Surname">
+            <input type="tel" placeholder="Cellphone number">
+            <input type="email" placeholder="Email">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected value="1" id="pack1">The Combo Plus</option>
+                    <option value="2" id="pack2">Maternity Session</option>
+                    <option value="3" id="pack3">Newborn Session</option>
+                    <option value="4" id="pack4">Model Shoot</option>
+                    <option value="5" id="pack5">Family and Newborn Combo</option>
+                    <option value="6" id="pack6">Full Family or Couple Session</option>
+                </select>
+                <label for="floatingSelect">Select Booking</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+            <button type="button" id="close">Close</button>
+        </form>
+
+        <!--footer - social site links - Email-->
+
+        <button type="button" id="callUs" class="btn btn-secondary">book a call</button>
+        <hr>
+        <footer>
+            <br>
+
+            <a class="foot" href="https://www.facebook.com/alevandersproductions" target="_blank"><img
+                    src="images/fbl.png" height="30" width="30" alt="Facebook"></a>
+            <a class="foot" href="https://www.instagram.com/alevanders_productions/#" target="_blank"><img
+                    src="images/insta.png" height="30" width="30" alt="Instagram"></a>
+            <a class="foot" href="#" target="_blank" title="Not Functional yet"><img src="images/whatsapp.webp"
+                    height="30" width="30" alt="Whatsapp"></a>
+
+        </footer>
+
+        <hr>
+
+        <!--scripts-->
+        <!--script form cdn is commented out to be abe to work offline-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./JavaScript/Catalogue.js"></script>
+        <script src="./jquery-3.6.0.js"></script>
+        <script src="./JavaScript/cart.js" defer></script>
+    </div>
+</body>
+
+</html>

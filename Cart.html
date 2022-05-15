@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cart</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--External css and bootstrap-->
+    <link href="./CSS/cartCss.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body onload="cartPage()">
+
+    <!--Top Navbar-->
+    <header>
+        <nav class="nav">
+            <a href="Alevandershome.html"><img id="Logo" src="Images/AlevandersLogo.png" height="135" width="220"
+                    alt="Logo"></a>
+            <ul id="navlinks">
+                <li class="nav1"><a class="nav1" href="Gallery.html">Gallery</a></li>
+                <li class="nav1"><a class="nav1" href="Catalogue.html">Bookings</a></li>
+                <li class="nav1"><a class="nav1" href="About.html">About Alevanders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form action="#" id="cartForm">
+        <div id="cartDisplay" class="containers">
+            <!--Items added with JS-->
+            <input disabled type="text" id="cartTotal" placeholder="total">
+            <input disabled type="text" id="vat" placeholder="VAT">
+
+            <p id="coupon">Apply a <button id="discountCoupon">DISCOUNT</button> coupon</p>
+        </div>
+    </form>
+
+    <!--I am falling behind on my tasks, so edit functionality will be added at a later stage, for my portfolio.
+
+    <form action="#" id="formEdit">
+        <div id="editMenu" class="containers">
+           
+            <button type="button" id="closeExtra" class="closeExtra">X</button>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkAll">
+                <label class="form-check-label" for="checkAll">
+                    Take All
+                </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="150" id="check1">
+                    <label class="form-check-label" for="check1">
+                        USB, R150
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="300" id="check2">
+                    <label class="form-check-label" for="check2">
+                        Printed Mug, R300
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="450" id="check3">
+                    <label class="form-check-label" for="check3">
+                        Album with session Highlights, R450
+                    </label>
+                </div>
+            </div>
+            <input id="dateBooked" class="prices" type="date">
+            <input id="extraValue" class="prices" type="number" disabled value="0" placeholder="0">
+            <input id="totalValue" class="prices" type="number" disabled value="0" placeholder="0">
+            <button id="saveNew" type="button">Save Changes</button>
+        </div>
+    </form>
+    -->
+
+    <form action="#" id="discountForm">
+
+        <input id="customerName" type="text" placeholder="Your name">
+        <input id="customerSurname" type="text" placeholder="Surname">
+        <input id="customerCell" type="tel" placeholder="Cellphone number">
+        <input id="couponNumber" type="number" placeholder="coupon number">
+
+        <div class="form-floating" id="commentInput">
+            <textarea class="form-control" placeholder="Comments" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments - use 1234 as a coupon nr for 10% discount</label>
+        </div>
+
+        <!-- Add functionality with disabled coupon number later and display discount applied
+            (preferably display inside cart)
+        <input id="percentage" type="number">
+        <input id="totalDiscount" type="number">
+-->
+        <button type="submit" id="submit">Submit</button>
+        <button type="button" id="close">Close</button>
+
+    </form>
+
+    <form action="#" id="checkOut">
+        <div id="checkoutMenu" class="containers">
+            <!--Menu with delivery options onchange add to total-->
+            <input id="yourName" type="text" placeholder="Name">
+            <input id="surname" type="text" placeholder="Surname">
+            <select class="form-select" aria-label="Default select example" id="delivery">
+                <option selected value="0">deliver or Collect</option>
+                <option value="100" class="dropdown-item">± 2days - R100</option>
+                <option value="150" class="dropdown-item">Overnight - R150</option>
+                <option value="0" class="dropdown-item">Collect</option>
+            </select>
+            <input id="address" type="text" placeholder="Address">
+            <button id="checkOutFinal">Proceed to payment</button>
+        </div>
+    </form>
+
+    <footer>
+        <br>
+
+        <a class="foot" href="https://www.facebook.com/alevandersproductions" target="_blank"><img src="images/fbl.png"
+                height="30" width="30" alt="Facebook"></a>
+        <a class="foot" href="https://www.instagram.com/alevanders_productions/#" target="_blank"><img
+                src="images/insta.png" height="30" width="30" alt="Instagram"></a>
+        <a class="foot" href="#" target="_blank" title="Not Functional yet"><img src="images/whatsapp.webp" height="30"
+                width="30" alt="Whatsapp"></a>
+
+    </footer>
+
+
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./jquery-3.6.0.js"></script>
+    <script src="./JavaScript/cart.js"></script>
+</body>
+
+</html>

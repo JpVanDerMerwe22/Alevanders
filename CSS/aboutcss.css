@@ -1,0 +1,169 @@
+body {
+    background-size: cover center fixed no-repeat;
+    animation: body 15s infinite;
+}
+
+@-webkit-keyframes body {
+    33% {
+        background-image:url(aboutbackgrnd/_DSC0903.jpg); background-size: cover;
+    }
+
+    
+    
+    66% {
+        background-image: url(aboutbackgrnd/DSC_0181.jpg); background-size: cover;
+    }
+    
+    99% {
+        background-image: url(aboutbackgrnd/DSC_0315.jpg); background-size: cover;
+    }
+    
+}
+
+@keyframes body {
+    33% {
+        background-image:url(aboutbackgrnd/_DSC0903.jpg); background-size: cover;
+    }
+
+    
+
+    66% {
+        background-image: url(aboutbackgrnd/DSC_0181.jpg); background-size: cover;
+    }
+
+   99% {
+        background-image: url(aboutbackgrnd/DSC_0315.jpg); background-size: cover;
+    }
+
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    align-content: center;
+}
+
+#cartimg, #cart{
+    grid-area: 1 / 6 / 1/ 7;
+    width: 50px;
+    height: 45px;
+    opacity: 0.4;
+    margin-left: 90%;
+}
+
+.nav {
+    grid-area: 1/ 4 / 4 / 4;
+    width:fit-content;
+    height: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 2px 8px 2px 8px;
+    opacity: 0.9 !important;
+    text-decoration-style: none;
+}
+
+.nav1 {
+    font-style: italic;
+    border: 1px hidden;
+    text-decoration: none;
+    text-align:center;
+    color: rgb(73, 71, 71);
+    padding: 2px 2px 2px 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav1:hover {
+    color: rgb(41, 34, 34);
+    opacity: 0.5;
+}
+
+h2 {
+    color: darkslategrey;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+p{
+    margin-left: 1%;
+    margin-right: 1%;
+    opacity: 1 !important;
+}
+
+.block1 {
+    background-color: grey;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: div1 19s infinite;
+    border: 1px solid;
+    padding: 1px 1px 1px 1px;
+    opacity: 0.85;
+   
+}
+
+.block2 {
+    background-color: grey;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: div1 19s infinite;
+    border: 1px solid;
+    padding: 1px 1px 1px 1px;
+    opacity: 0.85;
+}
+
+@-webkit-keyframes div1 {
+    0% {
+        background-color: rgb(136, 116, 116);
+    }
+
+    50% {
+        background-color: rgb(182, 158, 122);
+    }
+
+    100% {
+        background-color: rgb(146, 114, 114);
+    }
+
+}
+
+@keyframes div1 {
+    0% {
+        background-color: rgb(136, 116, 116);
+    }
+
+    50% {
+        background-color: rgb(182, 158, 122);
+    }
+
+    100% {
+        background-color: rgb(146, 114, 114);
+    }
+}
+
+p {
+    text-align: center;
+}
+
+a>img:hover{
+    opacity: 0.5;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    bottom: 20px;
+    height: 30px;
+    width: 100%;
+}
+
+a {
+    padding: 8px 8px 8px 8px;
+}

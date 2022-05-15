@@ -1,0 +1,175 @@
+body {
+    background: url(./aboutbackgrnd/night.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+header {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    align-content: center;
+}
+
+#main {
+    width: 100%;
+    z-index: -1;
+    top: 200px;
+}
+
+#cartimg,
+#cart {
+    grid-area: 2 / 6 / 2/ 7;
+    width: 50px;
+    height: 45px;
+    opacity: 0.4;
+    margin-left: 90%;
+}
+
+#Logo {
+    opacity: 1;
+}
+
+#Logo:hover {
+    /*overwrite general img rules*/
+    filter: none !important;
+    opacity: 0.8;
+}
+
+#topNav {
+    grid-area: 1/ 4 / 4 / 4;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navlinks>li {
+    display: block;
+    list-style-type: none;
+    opacity: 1;
+    background-color: rgb(117, 100, 100, 0.88);
+    border: 0.8px solid rgb(92, 149, 167);
+    border-radius: 3;
+    margin-top: 2%;
+    box-shadow: 2px 2px 3px 3px rgb(151, 146, 146);
+    text-decoration-style: none;
+}
+
+.nav1 {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-style: italic;
+    border: 1px hidden;
+    text-decoration: none;
+    color: rgb(126, 120, 87);
+    padding: 2px 2px 2px 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav1:hover {
+    color: rgb(207, 196, 196);
+    opacity: 0.9;
+}
+
+
+#quote {
+    font-style: italic;
+    font-size: larger;
+    font-weight: lighter;
+    font-family: tahoma;
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(219, 219, 161);
+    text-decoration: underline;
+}
+
+.homepreview,
+tr,
+td {
+    border: 2px invisible;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5px 0.5px 0.5px 0.5px;
+}
+
+.album:hover {
+    opacity: 0.65;
+    background-color: rgb(87, 78, 78);
+}
+
+.album {
+    width: 7cm;
+    height: 6.5cm;
+    padding: 1px 1px 1px 1px;
+    opacity: 0.12;
+}
+
+h2 {
+    font-size: medium;
+    font-family: serif;
+    color: beige;
+    text-align: center;
+}
+
+#services {
+    width: fit-content;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.descriptions,
+.book {
+    width: fit-content;
+    text-align: center;
+    margin: auto auto auto auto;
+    background-color: rgba(83, 92, 89, 0.75);
+    max-width: 45%;
+    text-decoration: none;
+}
+
+.bookings {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(243, 243, 186);
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#footerBox {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    margin-top: 65%;
+}
+
+footer>a {
+    padding: 8px 8px 8px 8px;
+}
+
+hr {
+    border: 1px solid rgb(39, 65, 65);
+}
+
+.review {
+    padding: 8px 8px 8px 8px;
+    margin-left: 0.5%;
+    background-color: rgba(138, 206, 206, 0.75);
+    opacity: 0.5;
+    display: inline-flex;
+    border: 0.2px hidden grey;
+    border-radius: 40%;
+    text-decoration-color: rgb(31, 20, 20);
+    text-align: center;
+    filter: drop-shadow(1px 1px 3px white);
+}
